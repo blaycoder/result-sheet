@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #05445E;
+    --secondary: #189AB4;
+    --tertiary: #D4F1F4;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-weight: 500;
+}
+
+.logo {
+    width: 50%;
+    height: 50%;
+    margin: auto 0;
+}
+
+.address-info {
+    background-color: var(--white);
+    text-align: center;
+    color: var(--black);
+    border: 1px solid #666;
+}
+
+.bio-data{
+    border: 1px solid #666;
+}
+
+.school-name {
+    font-size: 23px;
+    font-weight: 900;
+}
+
+th, td {
+    padding: 5px !important;
+}
+
+td img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.term {
+    background-color: var(--primary);
+    padding: 10px;
+    text-align: center;
+    color: var(--white);
+    border: 1px solid #666;
+}
+
+.table {
+    width: 100% !important;
+}
+
+.domain {
+    background-color: var(--white);
+    border: 1px solid #666;
+    margin-right: 30px;
+}
+
+.keys {
+    background-color: var(--white);
+    border: 1px solid #666;
+}
+
+.affective, .psychomotor, .SG, .DG {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.affective-domain, .score-grading {
+    background-color: var(--tertiary);
+    border: 1px solid #666;
+    margin-right: 20px;
+}
+
+.psychomotor-domain, .domain-grading {
+    background-color: var(--secondary);
+    border: 1px solid #666;
+}
+
+.affective-domain .table-bordered td, .affective-domain th{
+    border: 1px solid var(--white);
+}
+
+.score-grading .table-bordered td, .score-grading th{
+    border: 1px solid var(--white);
+}
+
+.domain-grading .table-bordered td{
+    border: 1px solid var(--white);
+}
+
+.comment {
+    background-color: var(--white);
+    border: 1px solid #666;
+}
+
+
+
+/* .sect-a {
+    background-color: var();
+} */
