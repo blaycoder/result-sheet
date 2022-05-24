@@ -107,11 +107,21 @@ td img {
 }
 
 @media (max-width: 991.98px){
+    body {
+        font-size: 14px;
+    }
     .logo img {
         width: 100%;
         height: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .school-name {
+        font-size: 18px;
+    }
+
+    tr p {
+        font-size: 14px;
     }
 
 }
