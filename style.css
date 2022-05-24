@@ -106,7 +106,30 @@ td img {
     border: 1px solid #666;
 }
 
+.mobile {
+    display: none;
+    background-color: var(--white);
+    border: 1px solid #666;
+    margin-left: 1px;
+}
+
+
+
+
 @media (max-width: 991.98px){
+    .mobile {
+        display: block;
+    }
+
+    .mobile .score-grading, .mobile .domain-grading, .mobile .psychomotor-domain, .mobile .affective-domain{
+        width: 250px;
+        height: 200px;
+    }
+
+    .keys-hide, .domain-hide {
+        display: none;
+    }
+
     body {
         font-size: 14px;
     }
