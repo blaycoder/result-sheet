@@ -124,5 +124,11 @@ td img {
         font-size: 14px;
     }
 
+    .passport img {
+        width: 80%;
+        height: 80%;
+        margin-top: 50px;
+    }
+
 }
 
