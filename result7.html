@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" >
-    <title>Result Template 4</title>
+    <title>Result Template 7</title>
 
     <style>
 
@@ -16,12 +16,10 @@
     padding: 0;
 }
 
-
-
 :root {
-    --primary: #05445E;
-    --secondary: #189AB4;
-    --tertiary: #D4F1F4;
+    --primary: #D92653;
+    --secondary: #D926AD;
+    --tertiary: #AC26D9;
     --white: #ffffff;
     --black: #000000;
 }
@@ -29,7 +27,9 @@
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
+    overflow-x: hidden;
+    line-height: 1.1em;
 }
 
 .logo {
@@ -55,22 +55,22 @@ body {
     font-weight: 900;
 }
 
-th, td {
-    padding: 5px !important;
+th{
+    padding: 0.2rem 0.75rem;
 }
 
-/* th img {
-    display:inline-block;
-    width: 50px;
-    height: 50px;
-    max-width: 100px;
-} */
+.td__padding {
+    padding: 0.05rem 0.75rem !important;
+}
 
-.passport img {
-        width: 70px;
-        height: 70px;
-        max-width: 100px;
-    }
+tr {
+    padding: 0.05rem 0.75rem;
+}
+td img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .term {
     background-color: var(--primary);
     padding: 10px;
@@ -155,16 +155,6 @@ th, td {
         padding: 0;
         font-size: 14px;
     }
-
-    body::-webkit-scrollbar{
-      display: none;
-    }
-
-    body {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
     .logo img {
         width: 80%;
         height: 80%;
@@ -208,22 +198,22 @@ th, td {
 
 </head>
 <body>
-  <nav class="navbar navbar-static-top topbar" style="background-color: gray; height: 58px;">
+  <nav class="navbar navbar-static-top" style="background-color: gray; height: 58px;">
     <div class="container-fluid m-0">
     </div>
   </nav>
 
-    <div class="container-fluid table-print">
+    <div class="container-fluid">
       <div class="row">
-      <div class="col-sm-2 sidebar" style="background-color: rgb(20, 0, 0);">
-      
+      <div class="col-sm-2" style="background-color: rgb(20, 0, 0);">
+    
       </div>
-      <div class="col-sm-10" style="margin-top: 80px;">
+      <div class="col-sm-10" style="margin-top: 80px; padding: 0 10px  0 10px;">
         <div class="row bio-data">
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th scope="row" class="col-3 logo"><img src="e-School-favicon.jpg" style="width:100px; height: 100px;" alt="" class="logo img-responsive"></th>
+                <th scope="row" class="col-3  logo"><img src="e-School-favicon.jpg" alt="" class="logo img-responsive"></th>
                 <th scope="row" class="address-info col-9"><span class="school-name">ABC INTERNATIONAL SCHOOL </span>
                   <p>2, Education Center, Ikeja, Lagos State</p>
                   <p>📧: abcinternationalschool@gmail.com, 🌍 www.abcinternationalschool.com, 📱 090-2222-222-222</p></th>
@@ -236,42 +226,41 @@ th, td {
             <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <td scope="col">End of Term: FIRST TERM - 2021/2022 </td>
-                    <td scope="col">Final Average: 89%</td>
-                    <td scope="col" style="width:70px; height: 70px;" rowspan="4" class="passport"><img src="person-icon.png"  alt=""></td>
+                    <td scope="col"><strong>End of Term </strong> : FIRST TERM - 2021/2022 </td>
+                    <td scope="col" ><strong>Final Average</strong> : 89%</td>
+                    <td scope="col" width="15%" rowspan="4" class="passport"><img src="person-icon.png"  alt=""></th>
                   </tr>
                   <tr>
-                    <td scope="col">Name of Pupil: KUNLE BANKOLE</td>
-                    <td scope="col">Term AVG Score: 76%</td>
+                    <td scope="col"><strong> Name of Pupil</strong> : KUNLE BANKOLE</td>
+                    <td scope="col"><strong>Term AVG Score </strong> : 76%</td>
                   </tr>
                   <tr>
-                    <td scope="col">Sex: MALE </td>
-                    <td scope="col">Final Grade: B</td>
+                    <td scope="col"><strong> Sex </strong> : MALE </td>
+                    <td scope="col"><strong> Final Grade </strong>: B</td>
                   </tr>
            
                   <tr>
-                    <td scope="col">Age: 12 Years</td>
-                    <td scope="col">No. of Subject: 24</td>
+                    <td scope="col"><strong> Age </strong>: 12 Years</td>
+                    <td scope="col"><strong>No. of Subject </strong> : 24</td>
                   </tr>
                   <tr>
-                    <td scope="col">Student ID: SKA_089 </td>
+                    <td scope="col"><strong>Student ID</strong>: SKA_089  </td>
                   </tr>
                   <tr>
-                    <td scope="col">Class: YEAR 5 </td>
+                    <td scope="col"><strong>Class</strong> : YEAR 5 </td>
                   </tr>
                 </thead>
                 </tbody>
               </table>
       </div>
-      <div class="col-12 justify-content-md-center term">COGNITIVE DOMAIN</div>
+      <div class="col-12 justify-content-md-center term"><strong>COGNITIVE DOMAIN</strong> </div>
       
     <div class="table-responsive">
             <table class="table table-bordered">
                 <thead>
                   <tr>
                     <th scope="col">SUBJECTS TAKEN</th>
-                    <th scope="col">1st C/A (20 marks)</th>
-                    <th scope="col">2nd C/A (20 marks)</th>
+                    <th scope="col">C/A (40 marks)</th>
                     <th scope="col">Exam (60 marks)</th>
                     <th scope="col">TERM AVERAGE (100%)</th>
                     <th scope="col">TERM GRADE</th>
@@ -289,12 +278,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Mathematics</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -312,11 +298,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">History</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -334,11 +318,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Physical and Health Education</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -356,11 +338,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Basic Science</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -378,11 +358,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Basic Technology</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -400,11 +378,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Business Studies</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -422,11 +398,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Social Studies</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -444,11 +418,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Cultural and Creative Art</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -466,11 +438,9 @@ th, td {
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <th scope="row">Music</th>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -485,7 +455,8 @@ th, td {
       <div class="col-12 justify-content-md-center term">NO. OF DAYS OPENED: | NO. OF DAYS PRESENT: | NO. OF DAYS ABSENT:
       </div>
     </div>
-  <div class="row domain-table">
+
+  <div class="row">
     <div class="col domain domain-hide">
       <!-- Affective & Psychomotor -->
       <div class="row">
@@ -657,8 +628,6 @@ th, td {
               </div>
             </th>
 
-
-
             <th scope="col" class="keys">
               <div class="col domain-grading ">
                 <span class="DG"> Domain Grading</span>
@@ -708,12 +677,9 @@ th, td {
       </div>
     </div>
   </div>
+
   
-  <ul>
-    <li><a href="result5.html" target="_blank">Result 1</a> </li>
-    <li><a href="result6.html" target="_blank">Result 2</a> </li>
-    <li><a href="result7.html" target="_blank">Result 3</a> </li>
-  </ul>
+
 
 
 

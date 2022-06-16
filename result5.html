@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" >
-    <title>Result Template 4</title>
+    <title>Result Template 5</title>
 
     <style>
 
@@ -16,12 +16,10 @@
     padding: 0;
 }
 
-
-
 :root {
-    --primary: #05445E;
-    --secondary: #189AB4;
-    --tertiary: #D4F1F4;
+    --primary: #997466;
+    --secondary: #28C7D7;
+    --tertiary: #668B99;
     --white: #ffffff;
     --black: #000000;
 }
@@ -29,7 +27,6 @@
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     font-weight: 500;
-    font-size: 13px;
 }
 
 .logo {
@@ -59,18 +56,11 @@ th, td {
     padding: 5px !important;
 }
 
-/* th img {
-    display:inline-block;
-    width: 50px;
-    height: 50px;
-    max-width: 100px;
-} */
-
-.passport img {
-        width: 70px;
-        height: 70px;
-        max-width: 100px;
-    }
+td img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 .term {
     background-color: var(--primary);
     padding: 10px;
@@ -137,34 +127,24 @@ th, td {
 
 
 @media (max-width: 991.98px){
-    .mobile {
+    /* .mobile {
         display: block;
-    }
+    } */
 
     .mobile .score-grading, .mobile .domain-grading, .mobile .psychomotor-domain, .mobile .affective-domain{
         width: 250px;
         height: 200px;
     }
 
-    .keys-hide, .domain-hide {
+    /* .keys-hide, .domain-hide {
         display: none;
-    }
+    } */
 
     body {
         margin: 0;
         padding: 0;
         font-size: 14px;
     }
-
-    body::-webkit-scrollbar{
-      display: none;
-    }
-
-    body {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-
     .logo img {
         width: 80%;
         height: 80%;
@@ -208,22 +188,22 @@ th, td {
 
 </head>
 <body>
-  <nav class="navbar navbar-static-top topbar" style="background-color: gray; height: 58px;">
+  <nav class="navbar navbar-static-top" style="background-color: gray; height: 58px;">
     <div class="container-fluid m-0">
     </div>
   </nav>
 
-    <div class="container-fluid table-print">
+    <div class="container-fluid">
       <div class="row">
-      <div class="col-sm-2 sidebar" style="background-color: rgb(20, 0, 0);">
-      
+      <div class="col-sm-2" style="background-color: rgb(20, 0, 0);">
+       
       </div>
       <div class="col-sm-10" style="margin-top: 80px;">
         <div class="row bio-data">
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th scope="row" class="col-3 logo"><img src="e-School-favicon.jpg" style="width:100px; height: 100px;" alt="" class="logo img-responsive"></th>
+                <th scope="row" class="col-3  logo"><img src="e-School-favicon.jpg" alt="" class="logo img-responsive"></th>
                 <th scope="row" class="address-info col-9"><span class="school-name">ABC INTERNATIONAL SCHOOL </span>
                   <p>2, Education Center, Ikeja, Lagos State</p>
                   <p>📧: abcinternationalschool@gmail.com, 🌍 www.abcinternationalschool.com, 📱 090-2222-222-222</p></th>
@@ -238,7 +218,7 @@ th, td {
                   <tr>
                     <td scope="col">End of Term: FIRST TERM - 2021/2022 </td>
                     <td scope="col">Final Average: 89%</td>
-                    <td scope="col" style="width:70px; height: 70px;" rowspan="4" class="passport"><img src="person-icon.png"  alt=""></td>
+                    <td scope="col" width="15%" rowspan="4" class="passport"><img src="person-icon.png"  alt=""></th>
                   </tr>
                   <tr>
                     <td scope="col">Name of Pupil: KUNLE BANKOLE</td>
@@ -270,8 +250,7 @@ th, td {
                 <thead>
                   <tr>
                     <th scope="col">SUBJECTS TAKEN</th>
-                    <th scope="col">1st C/A (20 marks)</th>
-                    <th scope="col">2nd C/A (20 marks)</th>
+                    <th scope="col">C/A (40 marks)</th>
                     <th scope="col">Exam (60 marks)</th>
                     <th scope="col">TERM AVERAGE (100%)</th>
                     <th scope="col">TERM GRADE</th>
@@ -485,46 +464,7 @@ th, td {
       <div class="col-12 justify-content-md-center term">NO. OF DAYS OPENED: | NO. OF DAYS PRESENT: | NO. OF DAYS ABSENT:
       </div>
     </div>
-  <div class="row domain-table">
-    <div class="col domain domain-hide">
-      <!-- Affective & Psychomotor -->
-      <div class="row">
-        <div class="col affective-domain table-responsive">
-          <span class="affective"> Affective Domain </span>
-          <table class="table table-bordered">
-            <tr>
-              <th scope="row">Leadership</th>
-              <td>3</td>
-            </tr>
-            <tr>
-              <th scope="row">Social Skills</th>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th scope="row">Sport Management</th>
-              <td>3</td>
-            </tr>
-          </table>
-        </div>
-        <div class="col psychomotor-domain table-responsive">
-          <span class="psychomotor"> Psychomotor Domain </span>
-          <table class="table table-bordered">
-            <tr>
-              <th scope="row">Creativity</th>
-              <td>3</td>
-            </tr>
-            <tr>
-              <th scope="row">Drawing</th>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th scope="row">Writing</th>
-              <td>3</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-    </div>
+  <div class="row">
 
     <div class="col keys keys-hide">
       <!-- Keys -->
@@ -554,31 +494,6 @@ th, td {
           </tr>
         </table>
         </div>
-        <div class="col domain-grading table-responsive">
-          <span class="DG"> Domain Grading</span>
-          <table class="table table-bordered">
-            <tr>
-              <th scope="row">5</th>
-              <td>Excellent</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Very Good</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Good</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Average</td>
-            </tr>
-            <tr>
-              <th scope="row">1</th>
-              <td>Below Average</td>
-            </tr>
-          </table>
-        </div>
       </div>
     </div>
 
@@ -586,48 +501,6 @@ th, td {
     <div class="row mobile table-responsive">
       <table class="table table-bordered">
         <thead>
-          <tr>
-            <th scope="col" class="">
-              <div class="col affective-domain ">
-                <span class="affective">  Affective Domain </span>
-                <table class="table table-bordered">
-                  <tr>
-                    <th scope="row">Leadership</th>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Social Skills</th>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Sport Management</th>
-                    <td>3</td>
-                  </tr>
-                </table>
-              </div>
-            </th>
-            
-            
-
-            <th scope="col" class="">
-              <div class="col psychomotor-domain ">
-              <span class="psychomotor"> Psychomotor Domain </span>
-              <table class="table table-bordered">
-                <tr>
-                  <th scope="row">Creativity</th>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <th scope="row">Drawing</th>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <th scope="row">Writing</th>
-                  <td>3</td>
-                </tr>
-              </table>
-            </div>
-            </th>
 
             <th scope="col" class="keys">
               <div class="col score-grading">
@@ -656,43 +529,12 @@ th, td {
               </table>
               </div>
             </th>
-
-
-
-            <th scope="col" class="keys">
-              <div class="col domain-grading ">
-                <span class="DG"> Domain Grading</span>
-                <table class="table table-bordered">
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Excellent</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Very Good</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Good</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Average</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Below Average</td>
-                  </tr>
-                </table>
-              </div>
-            </th>
             
           </tr>
         </thead>
       </table>
     </div>
     <!--End of Domain Mobile-->
-
   </div>
   <div class="row comment">
     <table class="table table-bordered">
@@ -709,11 +551,7 @@ th, td {
     </div>
   </div>
   
-  <ul>
-    <li><a href="result5.html" target="_blank">Result 1</a> </li>
-    <li><a href="result6.html" target="_blank">Result 2</a> </li>
-    <li><a href="result7.html" target="_blank">Result 3</a> </li>
-  </ul>
+
 
 
 
